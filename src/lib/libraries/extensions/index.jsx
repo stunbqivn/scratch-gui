@@ -233,5 +233,21 @@ export default [
         ),
         helpLink: 'https://scratch.mit.edu/wedo'
 
+    },
+    {
+        name: 'Griffpatch Test 0.1',
+        extensionId: 'griffpatch',
+        collaborator: 'Griffpatch',
+        iconURL: wedoImage,
+        insetIconURL: wedoMenuImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Test Griffpatch Extension."
+                description="Description for the 'Griffpatch' extension"
+                id="gui.extension.test.description"
+            />
+        ),
+        featured: true,
+        disabled: false
     }
 ];
