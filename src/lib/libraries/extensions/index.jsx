@@ -12,6 +12,7 @@ import translateInsetImage from './translate-small.png';
 import microbitImage from './microbit.png';
 import ev3Image from './ev3.png';
 import wedoImage from './wedo.png';
+import physicsImage from './physics.png';
 import text2speechImage from './text2speech.png';
 import text2speechInsetImage from './text2speech-small.svg';
 import makeymakeyImage from './makeymakey.png';
@@ -26,6 +27,22 @@ import wedoMenuImage from './peripheral-connection/wedo/wedo-small.svg';
 import wedoButtonImage from './peripheral-connection/wedo/wedo-button-illustration.svg';
 
 export default [
+    {
+        name: 'Physics',
+        extensionId: 'griffpatch',
+        // collaborator: 'Griffpatch',
+        iconURL: physicsImage,
+        insetIconURL: wedoMenuImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Box2D Physics extension."
+                description="Description for the 'Griffpatch' extension"
+                id="gui.extension.test.description"
+            />
+        ),
+        featured: true,
+        disabled: false
+    },
     {
         name: (
             <FormattedMessage
@@ -233,21 +250,5 @@ export default [
         ),
         helpLink: 'https://scratch.mit.edu/wedo'
 
-    },
-    {
-        name: 'Griffpatch Test 0.1',
-        extensionId: 'griffpatch',
-        collaborator: 'Griffpatch',
-        iconURL: wedoImage,
-        insetIconURL: wedoMenuImage,
-        description: (
-            <FormattedMessage
-                defaultMessage="Test Griffpatch Extension."
-                description="Description for the 'Griffpatch' extension"
-                id="gui.extension.test.description"
-            />
-        ),
-        featured: true,
-        disabled: false
     }
 ];
