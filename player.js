@@ -13,12 +13,13 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".player_stage-only_3sowo {\r\n    width: calc(480px + 1rem);\r\n}\r\n\r\n.player_stage-only_3sowo * {\r\n    -webkit-box-sizing: border-box;\r\n            box-sizing: border-box;\r\n}\r\n", ""]);
+exports.push([module.i, ".player_stage-only_3sowo {\r\n    width: calc(480px + 1rem);\r\n}\r\n\r\n.player_editor_pHkoy {\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    height: 100%;\r\n    width: 100%;\r\n}\r\n\r\n.player_stage-only_3sowo * {\r\n    -webkit-box-sizing: border-box;\r\n            box-sizing: border-box;\r\n}\r\n", ""]);
 
 // exports
 exports.locals = {
 	"stage-only": "player_stage-only_3sowo",
-	"stageOnly": "player_stage-only_3sowo"
+	"stageOnly": "player_stage-only_3sowo",
+	"editor": "player_editor_pHkoy"
 };
 
 /***/ }),
@@ -80,8 +81,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _reducers_mode__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../reducers/mode */ "./src/reducers/mode.js");
 /* harmony import */ var _player_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./player.css */ "./src/playground/player.css");
 /* harmony import */ var _player_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_player_css__WEBPACK_IMPORTED_MODULE_12__);
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 
@@ -106,7 +105,7 @@ var Player = function Player(_ref) {
       onSeeInside = _ref.onSeeInside,
       projectId = _ref.projectId;
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_box_box_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_defineProperty({}, _player_css__WEBPACK_IMPORTED_MODULE_12___default.a.stageOnly, isPlayerOnly))
+    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(isPlayerOnly ? _player_css__WEBPACK_IMPORTED_MODULE_12___default.a.stageOnly : _player_css__WEBPACK_IMPORTED_MODULE_12___default.a.editor)
   }, isPlayerOnly && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("button", {
     onClick: onSeeInside
   }, 'See inside'), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_containers_gui_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], {
