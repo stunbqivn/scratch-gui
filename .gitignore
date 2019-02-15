@@ -18,3 +18,15 @@ npm-*
 # generated translation files
 /translations
 /locale
+.idea/checkstyle-idea.xml
+.idea/codeStyles/codeStyleConfig.xml
+.idea/codeStyles/Project.xml
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/scratch-gui.iml
+.idea/vcs.xml
+.idea/workspace.xml
+src/lib/libraries/extensions/physics.ai
